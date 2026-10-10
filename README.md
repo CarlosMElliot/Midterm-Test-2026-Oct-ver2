@@ -31,7 +31,7 @@ The edit code is checked server-side against a SHA-256 hash in the restricted `m
 
 ## Test behavior
 
-24 sections, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Three focus warnings end the local attempt on the third departure; monitoring is best effort. Submit a new response starts a separate attempt. Receipt details, report downloads, results links and teacher navigation are hidden from the student test screen. Teachers can still open the response dashboard directly. Email sending is not configured in this edition.
+24 sections, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Three focus warnings end the local attempt on the third departure; monitoring is best effort. Submit a new response starts a separate attempt. Receipt details, JSON downloads, results links and teacher navigation are hidden from the student test screen. Students can download a readable report or submit a new response. Teachers can still open the response dashboard directly. Email sending is not configured in this edition.
 
 ## Deployment and source
 
