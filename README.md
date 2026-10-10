@@ -23,7 +23,9 @@ Anyone can view student responses without a password. The page loads current Sup
 
 ## Teacher grading
 
-Viewing responses requires no sign-in. Changing grades requires owner access to Supabase. In the Supabase Table Editor, open `midterm_submissions`, find the student's row and edit its `grades` JSON object: map question IDs to raw earned points, such as `{"1-1": 1}`. Use each question's displayed raw maximum. Refresh the public view to see recalculated scores; the next sync updates GitHub. Remove a grade entry to restore automatic scoring/completion credit.
+Viewing responses requires no sign-in. To grade directly in the public teacher view, expand **Teacher grading access** and enter the private edit code provided separately. Expand a student and section, edit points beside any question, then click **Save changed points**. Section and overall weighted scores update immediately, and GitHub copies the update on the next sync. Only edited questions are graded. **Restore automatic points** removes an override after saving. Points must stay within each question's raw maximum; the overall maximum stays 100. Conflicting simultaneous updates are rejected so a stale page cannot overwrite newer grades.
+
+The edit code is checked server-side against a SHA-256 hash in the restricted `midterm_teacher_access` table. It is never committed to GitHub or persisted in the browser. Supabase owner access can also manage the `grades` JSON in `midterm_submissions`.
 
 `teacher.html` remains an optional local JSON import/review workspace; edits made there do not update Supabase. No database password or secret API key is stored in this repository. The frontend's publishable application key is intentionally public. RLS is enabled and direct anonymous/authenticated table access is revoked; only the server function writes submissions. Names do not verify student identity. Public results and question keys are visible to students.
 
