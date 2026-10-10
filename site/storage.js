@@ -18,6 +18,7 @@ export async function api(path,data={}){
  if(path==='exam')return {exam:await getExam(),open:true,resetNotice:false};
  const store=readStore(),a=store.attempts.find(a=>a.id===store.active),now=new Date().toISOString();
  if(path==='attempt'){if(!a)throw Error('No active attempt');return structuredClone(a);}
+ if(path==='cancel'){if(a?.status==='in_progress'){a.status='cancelled';a.updatedAt=now;a.events.push({type:'cancelled',at:now});}store.active=null;store.resetNotice=false;writeStore(store);return {ok:true};}
  if(path==='new-response'){if(a?.status==='in_progress')throw Error('Finish your current attempt first.');store.active=null;store.resetNotice=false;writeStore(store);return {ok:true};}
  if(path==='start'){
   if(a?.status==='in_progress')throw Error('Resume your current attempt.');
