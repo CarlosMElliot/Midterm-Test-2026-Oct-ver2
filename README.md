@@ -19,7 +19,7 @@ Browser storage saves answers within one second and when navigating. It is local
 
 ## Teacher review and public results
 
-Open `teacher.html`, import student JSON downloads, review answers, assign raw item points and save. Section weighting keeps the total at 100. Text responses and ambiguous questions need manual grading. Download individual reports and a private backup of teacher reviews.
+Open `teacher.html`, import student JSON downloads, review answers, assign raw item points and save. Section weighting keeps the total at 100. Non-empty written responses receive full item completion credit immediately; whitespace-only and unanswered items receive zero. This credit is included in the provisional score, not a judgment of correctness. Teacher grades replace completion credit after review. Ambiguous unkeyed multiple-choice answers remain pending without completion credit. Download individual reports and a private backup of teacher reviews.
 
 To publish results, download `results.json` and upload it into `site/` in this repository. Download `RESULTS.md` and upload it into the repository root for a readable table. Each attempt has its own row. The Pages workflow publishes changed summaries. Downloaded report files can be attached manually to an email; the site does not send email.
 
