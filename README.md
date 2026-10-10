@@ -12,7 +12,7 @@ The test runs on **GitHub Pages**. **Supabase** handles submissions and server-s
 1. The student enters only a name and completes the test. Progress saves on their device while they work.
 2. Submit sends the name, answers, attempt ID, start time and focus count to the Supabase `midterm-api` Edge Function.
 3. The function validates answers against its question bank, calculates the score and stores the complete attempt in `public.midterm_submissions`. Client-supplied scores and grades are ignored. Retrying the same submission does not create duplicates.
-4. **Saved online** and a receipt confirm database storage. If sending fails, the student can retry or download their saved response.
+4. **Saved online** and a receipt confirm database storage. If sending fails, the student can retry; the response stays saved on their device.
 5. GitHub Actions copies complete public reports into `site/results.json`, updates `RESULTS.md`, and deploys Pages. The workflow runs every five minutes, but GitHub can delay scheduled runs. Supabase receipt confirmation does not mean the GitHub copy has finished yet.
 
 ## Every response is included
@@ -31,7 +31,7 @@ The edit code is checked server-side against a SHA-256 hash in the restricted `m
 
 ## Test behavior
 
-24 sections, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Three focus warnings end the local attempt on the third departure; monitoring is best effort. Submit a new response starts a separate attempt. JSON and text report downloads remain available; email sending is not configured in this edition.
+24 sections, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Three focus warnings end the local attempt on the third departure; monitoring is best effort. Submit a new response starts a separate attempt. Receipt details, report downloads, results links and teacher navigation are hidden from the student test screen. Teachers can still open the response dashboard directly. Email sending is not configured in this edition.
 
 ## Deployment and source
 
