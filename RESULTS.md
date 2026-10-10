@@ -1,6 +1,8 @@
 # Student results
 
-| Name | Score / 100 | Grading status | Submitted (UTC) | Updated (UTC) |
-| --- | --- | --- | --- | --- |
+Automatically synced from backend-scored submissions. Completion credit remains provisional until teacher review. Times are UTC.
 
-No results have been published for this static edition. Students download responses; the teacher imports and reviews them, then uploads the exported results table here and `results.json` to the `site/` folder.
+| Name | Score / 100 | Completion credit included | Status | Submitted (UTC) | Updated (UTC) |
+| --- | --- | --- | --- | --- | --- |
+
+No GitHub Pages submissions received yet.
