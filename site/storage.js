@@ -14,7 +14,7 @@ export async function syncAttempt(a){
  return {ok:!!receipt,receipt,warning:error};
 }
 export async function api(path,data={}){
- if(path==='exam')return {exam:await getExam(),open:true,resetNotice:!!readStore().resetNotice};
+ if(path==='exam')return {exam:await getExam(),open:true,resetNotice:false};
  const store=readStore(),a=store.attempts.find(a=>a.id===store.active),now=new Date().toISOString();
  if(path==='attempt'){if(!a)throw Error('No active attempt');return structuredClone(a);}
  if(path==='new-response'){if(a?.status==='in_progress')throw Error('Finish your current attempt first.');store.active=null;store.resetNotice=false;writeStore(store);return {ok:true};}
@@ -30,8 +30,7 @@ export async function api(path,data={}){
   for(const [id,v] of Object.entries(data.answers||{})){const q=a.exam.sections.flatMap(s=>s.questions).find(q=>q.id===id);if(!q||(q.type==='choice'?(!Number.isInteger(v)||v<0||v>=q.options.length):typeof v!=='string'||v.length>20000))throw Error('Invalid answer.');a.answers[id]=v;}
   if(Number.isInteger(data.position)&&data.position>=0&&data.position<1000)a.position=data.position;
  }else if(path==='violation'){
-  if(Date.now()-(a.lastViolation||0)>1500){a.lastViolation=Date.now();a.violations++;a.events.push({type:'focus_leave',at:now,reason:String(data.reason||'leave').slice(0,60)});}
-  if(a.violations>=3){a.status='reset';store.active=null;store.resetNotice=true;}
+  return {ok:true,restart:false,violations:a.violations||0};
  }else if(path==='submit'){a.status='submitted';a.submittedAt=now;a.events.push({type:'submitted',at:now});}else throw Error('Unknown action');
  a.updatedAt=now;writeStore(store);if(path==='submit')return syncAttempt(a);return {ok:true,restart:a.status==='reset',violations:a.violations};
 }
