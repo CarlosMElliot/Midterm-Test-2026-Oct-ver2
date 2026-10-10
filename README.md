@@ -15,7 +15,7 @@ The first workflow copies the original audio and image files from a pinned commi
 3. Submit, download the JSON response and send it to your teacher through your usual classroom channel. A readable report is also available.
 4. Use **Submit a new response** for another attempt. Previous submissions remain stored on the browser.
 
-Browser storage saves answers within one second and when navigating. It is local to this browser and site path. Clearing browser data removes it; there is no automatic central backup. Closing a tab is best-effort focus monitoring, not secure proctoring. The first detected departure warns; the second resets the active attempt while retaining its local record.
+Browser storage saves answers within one second and when navigating. It is local to this browser and site path. Clearing browser data removes it; there is no automatic central backup. Closing a tab is best-effort focus monitoring, not secure proctoring. Each detected departure produces one of three numbered popup warnings. The third ends the attempt and prompts a restart; its local record is retained. Each listening track is displayed once at the top of its exercise, with its question numbers when multiple tracks share a section.
 
 ## Teacher review and public results
 
