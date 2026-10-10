@@ -1,0 +1,6 @@
+export function score(a){let total=0,pending=0;const sections=a.exam.sections.map(s=>{let earned=0,max=0;const questions=s.questions.map(q=>{max+=q.max;const response=a.answers[q.id];let points=null;
+ if(a.grades[q.id]!==undefined)points=a.grades[q.id];else if(response===undefined||response==='')points=0;else if(q.type==='choice'&&q.answer!==null)points=response===q.answer?q.max:0;
+ if(points===null)pending++;else earned+=points;return {id:q.id,prompt:q.prompt,response:response??'',chosen:q.type==='choice'?q.options[response]??'':response??'',correct:q.type==='choice'?q.options[q.answer]??'Teacher review':q.answer??'Teacher review',points,max:q.max};});const weighted=max?earned/max*s.weight:0;total+=weighted;return {title:s.title,weight:s.weight,earned:weighted,questions};});return {total:Math.round(total*100)/100,pending,final:pending===0,sections};}
+
+export function report(a){const r=score(a);return [`Midterm results — ${a.name}`,`Started: ${a.startedAt}`,`Submitted: ${a.submittedAt||'Not submitted'}`,`${r.final?'Final':'Provisional'} score: ${r.total}/100; pending review: ${r.pending}`,`Focus incidents: ${a.violations}`,a.feedback||'',...r.sections.flatMap(s=>[`\n${s.title} (${s.earned.toFixed(2)}/${s.weight})`,...s.questions.map(q=>`${q.prompt}\nAnswer: ${q.chosen}\nExpected: ${q.correct}\nPoints: ${q.points??'Pending'}/${q.max}`)])].join('\n');}
+

@@ -1,0 +1,45 @@
+name: Publish static midterm
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Import original media once
+        run: |
+          if [ ! -f site/assets/audio/track-2.10.mp3 ]; then
+            git clone --no-checkout https://github.com/CarlosMElliot/Midterm-Test-2026-Oct.git /tmp/midterm-media
+            git -C /tmp/midterm-media checkout 33081e83d24df3b4a9ebf2107247965082ae46b5 -- public/assets
+            mkdir -p site/assets
+            cp -R /tmp/midterm-media/public/assets/. site/assets/
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add site/assets
+            git commit -m 'Include all original listening and visual assets'
+            git push origin HEAD:main
+          fi
+      - run: npm test
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
