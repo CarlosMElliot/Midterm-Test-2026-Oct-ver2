@@ -31,7 +31,7 @@ The edit code is checked server-side against a SHA-256 hash in the restricted `m
 
 ## Test behavior
 
-11 sections, 23 steps, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Switching tabs or windows produces no popup warnings and never restarts the attempt. Progress still saves on navigation and when the page is hidden or closed. Submit a new response starts a separate attempt. Receipt details, JSON downloads, results links and teacher navigation are hidden from the student test screen. Students can download a readable report or submit a new response. Teachers can still open the response dashboard directly. Email sending is not configured in this edition.
+11 sections, 30 steps, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Switching tabs or windows produces no popup warnings and never restarts the attempt. Progress still saves on navigation and when the page is hidden or closed. Submit a new response starts a separate attempt. Receipt details, JSON downloads, results links and teacher navigation are hidden from the student test screen. Students can download a readable report or submit a new response. Teachers can still open the response dashboard directly. Email sending is not configured in this edition.
 
 ## Deployment and source
 
@@ -46,7 +46,7 @@ The Edge Function authenticates the public application key itself (`verify_jwt=f
 
 The student test and teacher accordions consolidate the 24 original exercise groups into 11 sections. All questions, tracks and original scoring weights remain intact; server records retain original exercise IDs for compatibility.
 
-The test has 23 question pages: section introductions appear on the first exercise page, and clothing questions are grouped four per page. All modal verbs and key word transformation exercises appear together on one page, with separate exercise instructions and unchanged scoring. Existing in-progress attempts are mapped to the corresponding question when loading the new layout.
+The test has 30 question pages: section introductions appear on the first exercise page, and clothing questions are grouped four per page. Every exercise, including modal verbs and key word transformations, has separate pages and instructions. Scoring is unchanged. Existing in-progress attempts are mapped to the corresponding question when loading the new layout.
 
 Each of the 11 sections contains at most five multiple-choice questions. Existing written questions and section weights are retained. The mc5 question-bank version is used for new attempts; already-started older attempts remain supported with their original questions and scores.
 
