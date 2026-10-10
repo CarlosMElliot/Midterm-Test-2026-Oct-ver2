@@ -51,3 +51,5 @@ The test has 23 question pages: section introductions appear on the first exerci
 Each of the 11 sections contains at most five multiple-choice questions. Existing written questions and section weights are retained. The mc5 question-bank version is used for new attempts; already-started older attempts remain supported with their original questions and scores.
 
 Typed-answer exercises now contain at most two questions each, including modal transformations. The cooing-distraction passage uses dropdowns and is not treated as a typed-answer exercise. Section weights and the total of 100 remain unchanged. Earlier question-bank versions remain accepted for existing attempts.
+
+On desktop screens (at least 900 × 600), the test uses a centered viewport layout with progress and navigation always visible. Long exercise content scrolls inside the question card; each new step opens at the top of its content. Smaller screens retain normal page scrolling.
