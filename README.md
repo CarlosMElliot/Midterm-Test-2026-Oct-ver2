@@ -53,3 +53,5 @@ Each of the 11 sections contains at most five multiple-choice questions. Existin
 Typed-answer exercises now contain at most two questions each, including modal transformations. The cooing-distraction passage uses dropdowns and is not treated as a typed-answer exercise. Section weights and the total of 100 remain unchanged. Earlier question-bank versions remain accepted for existing attempts.
 
 The original page layout and normal scrolling are retained. On desktop, switching steps automatically centers the exercise and navigation when they fit, or aligns the beginning of a longer exercise near the top of the screen.
+
+Test pages show only the numbered section heading; duplicate exercise titles and section-name badges are removed. Exercise instructions and recording labels remain visible.
