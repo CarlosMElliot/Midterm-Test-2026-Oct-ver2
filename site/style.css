@@ -11,16 +11,3 @@
 .response-section{margin-top:16px;border:1px solid var(--line,#d9dee7);border-radius:12px;padding:14px 18px}.response-section>summary{cursor:pointer;font-weight:700;line-height:1.7}.response-section>summary .badge{margin-left:12px;white-space:nowrap}.response-section>summary .small{display:block;font-weight:400}.response-section>summary:focus-visible{outline:3px solid #4978dc;outline-offset:5px}.response-section[open]>summary{margin-bottom:16px}.response-section .card{margin-bottom:12px}
 
 #app textarea{min-height:64px;padding:8px 10px;resize:vertical}
-
-/* Keep the desktop test frame and navigation in place between exercises. */
-@media screen and (min-width:900px) and (min-height:600px){
- body:has(#app > .top-navigation){height:100dvh;display:grid;grid-template-rows:auto minmax(0,1fr) auto;overflow:hidden}
- body:has(#app > .top-navigation)>header{padding-top:12px;padding-bottom:12px}
- body:has(#app > .top-navigation)>footer{padding:8px}
- #app:has(> .top-navigation){width:100%;max-width:1080px;min-height:0;margin:12px auto 0;display:grid;grid-template-rows:auto auto auto auto minmax(0,1fr) auto;gap:6px}
- #app:has(> .top-navigation)>nav{margin:0;padding:8px 0;flex-wrap:nowrap}
- #app:has(> .top-navigation)>.card{min-height:0;overflow-y:auto;scrollbar-gutter:stable;overscroll-behavior:contain;margin:0;padding:22px 28px}
- #app:has(> .top-navigation) h1{font-size:32px;margin:12px 0 18px}
- #app:has(> .top-navigation) .section-introduction h2{font-size:22px;margin:0 0 8px}
- #app:has(> .top-navigation) fieldset{margin:18px 0}
-}
