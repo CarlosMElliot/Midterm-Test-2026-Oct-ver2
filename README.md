@@ -31,7 +31,7 @@ The edit code is checked server-side against a SHA-256 hash in the restricted `m
 
 ## Test behavior
 
-24 sections, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Switching tabs or windows produces no popup warnings and never restarts the attempt. Progress still saves on navigation and when the page is hidden or closed. Submit a new response starts a separate attempt. Receipt details, JSON downloads, results links and teacher navigation are hidden from the student test screen. Students can download a readable report or submit a new response. Teachers can still open the response dashboard directly. Email sending is not configured in this edition.
+11 sections, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Switching tabs or windows produces no popup warnings and never restarts the attempt. Progress still saves on navigation and when the page is hidden or closed. Submit a new response starts a separate attempt. Receipt details, JSON downloads, results links and teacher navigation are hidden from the student test screen. Students can download a readable report or submit a new response. Teachers can still open the response dashboard directly. Email sending is not configured in this edition.
 
 ## Deployment and source
 
@@ -43,3 +43,5 @@ GitHub Settings → Pages → GitHub Actions. `npm test` and `npm run build` val
 - `.github/workflows/sync-results.yml`: database-to-repository report sync.
 
 The Edge Function authenticates the public application key itself (`verify_jwt=false`) and uses Supabase's server-only environment credentials for database access. Deploy its complete folder when changing server scoring or the question bank. Keep `site/exam.json` and the function's exam snapshot/version synchronized. Run security advisors after schema changes; the intentional RLS-with-no-policies notice reflects the service-only table design.
+
+The student test and teacher accordions consolidate the 24 original exercise groups into 11 sections. All questions, tracks and original scoring weights remain intact; server records retain original exercise IDs for compatibility.

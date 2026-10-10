@@ -1,3 +1,4 @@
+import {LAYOUT_VERSION} from './sections.js';
 import {API_URL,PUBLIC_API_KEY} from './backend-config.js';
 import {score,report} from './grading.js';
 const KEY='high-note-midterm-static-v2';
@@ -21,12 +22,13 @@ export async function api(path,data={}){
  if(path==='start'){
   if(a?.status==='in_progress')throw Error('Resume your current attempt.');
   const name=String(data.name||'').trim();if(name.length<2||name.length>100)throw Error('Enter your name (2–100 characters).');
-  const next={format:'high-note-static-response-v1',id:crypto.randomUUID(),name,exam:await getExam(),answers:{},grades:{},status:'in_progress',position:0,violations:0,events:[],startedAt:now,updatedAt:now};store.active=next.id;store.attempts.push(next);writeStore(store);return {ok:true};
+  const next={format:'high-note-static-response-v1',id:crypto.randomUUID(),name,exam:await getExam(),answers:{},grades:{},status:'in_progress',layoutVersion:LAYOUT_VERSION,position:0,violations:0,events:[],startedAt:now,updatedAt:now};store.active=next.id;store.attempts.push(next);writeStore(store);return {ok:true};
  }
  if(!a)throw Error('No active attempt');
  if((path==='submit'||path==='sync')&&a.status==='submitted')return syncAttempt(a);
  if(a.status!=='in_progress')throw Error('This attempt is closed.');
  if(path==='save'){
+  a.layoutVersion=LAYOUT_VERSION;
   for(const [id,v] of Object.entries(data.answers||{})){const q=a.exam.sections.flatMap(s=>s.questions).find(q=>q.id===id);if(!q||(q.type==='choice'?(!Number.isInteger(v)||v<0||v>=q.options.length):typeof v!=='string'||v.length>20000))throw Error('Invalid answer.');a.answers[id]=v;}
   if(Number.isInteger(data.position)&&data.position>=0&&data.position<1000)a.position=data.position;
  }else if(path==='violation'){
