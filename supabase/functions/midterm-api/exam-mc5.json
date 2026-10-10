@@ -1,0 +1,1505 @@
+{
+  "title": "High Note 5 · Midterm",
+  "version": "2026-10-mc5",
+  "sections": [
+    {
+      "id": "1",
+      "title": "Listening: Study habits",
+      "weight": 4,
+      "instructions": "Listen to the recording. Answer in complete sentences, using details from the audio.",
+      "questions": [
+        {
+          "prompt": "Where and how does each student prefer to study? Explain why.",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "1-1"
+        },
+        {
+          "prompt": "What can stop them from being able to study or perform effectively?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "1-2"
+        }
+      ],
+      "audio": "2.10"
+    },
+    {
+      "id": "2",
+      "title": "Idiomatic expressions",
+      "weight": 6,
+      "instructions": "Choose the best answer for each question.",
+      "questions": [
+        {
+          "prompt": "A. Be on a steep learning curve",
+          "type": "choice",
+          "options": [
+            "Learn something new that requires considerable effort in a short time.",
+            "Complete a familiar task quickly and easily.",
+            "Repeat information until someone remembers it.",
+            "Stop studying because something is too difficult."
+          ],
+          "answer": 0,
+          "id": "2-1",
+          "max": 1
+        },
+        {
+          "prompt": "A. Give something your best shot",
+          "type": "choice",
+          "options": [
+            "Avoid taking risks when facing a challenge.",
+            "Attempt something with as little effort as possible.",
+            "Make your best possible effort to succeed at something.",
+            "Wait until someone else shows you how to succeed."
+          ],
+          "answer": 2,
+          "id": "2-6",
+          "max": 1
+        },
+        {
+          "prompt": "B. Since this is my first week learning Japanese, I'm on a ____.",
+          "type": "choice",
+          "options": [
+            "steep learning curve",
+            "blank page",
+            "last attempt",
+            "empty track"
+          ],
+          "answer": 0,
+          "id": "2-10",
+          "max": 1
+        },
+        {
+          "prompt": "B. The speaking test is challenging, but I'm going to ____ and do well.",
+          "type": "choice",
+          "options": [
+            "drum it into someone",
+            "give it my best shot",
+            "go blank",
+            "run on empty"
+          ],
+          "answer": 1,
+          "id": "2-15",
+          "max": 1
+        },
+        {
+          "prompt": "B. I practiced using the new software every day and finally ____. Now I can complete tasks easily.",
+          "type": "choice",
+          "options": [
+            "went blank",
+            "ran on empty",
+            "got the hang of it",
+            "got my head down"
+          ],
+          "answer": 2,
+          "id": "2-19",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Verbs + dependent prepositions",
+      "weight": 3,
+      "instructions": "Complete each student forum post with one correct preposition. Write only the missing preposition.",
+      "questions": [
+        {
+          "id": "3-1",
+          "type": "text",
+          "prompt": "Maya: I find it easier to concentrate ____ my homework when my phone is in another room.",
+          "answer": "on",
+          "max": 1
+        },
+        {
+          "id": "3-2",
+          "type": "text",
+          "prompt": "Leo: Yesterday I apologised ____ arriving late to our study group.",
+          "answer": "for",
+          "max": 1
+        },
+        {
+          "id": "3-3",
+          "type": "text",
+          "prompt": "Ana: Regular practice helps me cope ____ exam pressure.",
+          "answer": "with",
+          "max": 1
+        },
+        {
+          "id": "3-4",
+          "type": "text",
+          "prompt": "Sam: I finally succeeded ____ solving the problem without help.",
+          "answer": "in",
+          "max": 1
+        },
+        {
+          "id": "3-5",
+          "type": "text",
+          "prompt": "Noor: We all benefit ____ sharing revision strategies.",
+          "answer": "from",
+          "max": 1
+        },
+        {
+          "id": "3-6",
+          "type": "text",
+          "prompt": "Ben: Whether our project succeeds will depend ____ how well we organise our time.",
+          "answer": "on",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Modal and related verbs",
+      "weight": 5,
+      "instructions": "Choose the best answer for each question.",
+      "questions": [
+        {
+          "prompt": "I ____ say I enjoyed the exams though.",
+          "type": "choice",
+          "options": [
+            "mustn't",
+            "can't"
+          ],
+          "answer": 1,
+          "id": "4-1",
+          "max": 1
+        },
+        {
+          "prompt": "Oh dear, I can imagine what ____ happened.",
+          "type": "choice",
+          "options": [
+            "can't",
+            "must have"
+          ],
+          "answer": 1,
+          "id": "4-5",
+          "max": 1
+        },
+        {
+          "prompt": "It ____ been that bad, you passed after all, didn't you?",
+          "type": "choice",
+          "options": [
+            "mustn't",
+            "can't have"
+          ],
+          "answer": 1,
+          "id": "4-8",
+          "max": 1
+        },
+        {
+          "prompt": "I ____ have been practising every day, but I hadn't taken the trumpet out of the box for weeks.",
+          "type": "choice",
+          "options": [
+            "must",
+            "should"
+          ],
+          "answer": 1,
+          "id": "4-12",
+          "max": 1
+        },
+        {
+          "prompt": "Stressed won’t in “She won’t go to school” expresses:",
+          "type": "choice",
+          "options": [
+            "Refusal",
+            "Prediction"
+          ],
+          "answer": 0,
+          "id": "4-15",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Key word transformations",
+      "weight": 3,
+      "instructions": "Rewrite using the word given. Do not change that word. Type only the missing phrase.",
+      "questions": [
+        {
+          "prompt": "Cheating in an exam may blow up in your face. BACKFIRE: Cheating in an exam may ____.",
+          "type": "text",
+          "answer": "backfire on you",
+          "max": 1,
+          "id": "5-1"
+        },
+        {
+          "prompt": "Put the books in three piles. SORT: ____ the books into three piles.",
+          "type": "text",
+          "answer": "Sort",
+          "max": 1,
+          "id": "5-2"
+        },
+        {
+          "prompt": "If you make an effort with the work, you’ll succeed. APPLY: If you ____, you’ll succeed.",
+          "type": "text",
+          "answer": "apply yourself to the work",
+          "max": 1,
+          "id": "5-3"
+        },
+        {
+          "prompt": "The magician made a big noise to divert the audience’s attention away. DEFLECT: The magician made a big noise to ____.",
+          "type": "text",
+          "answer": "deflect the audience’s attention",
+          "max": 1,
+          "id": "5-4"
+        },
+        {
+          "prompt": "The guard stared at me with no emotion and I felt awkward. BLANKLY: The guard ____, and I felt awkward.",
+          "type": "text",
+          "answer": "stared at me blankly",
+          "max": 1,
+          "id": "5-5"
+        },
+        {
+          "prompt": "His success came about through many years of hard work. ASSOCIATED: His success ____ many years of hard work.",
+          "type": "text",
+          "answer": "was associated with",
+          "max": 1,
+          "id": "5-6"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Attempt and effort",
+      "weight": 3,
+      "instructions": "Match each expression to its meaning. Select the correct definition for each item.",
+      "questions": [
+        {
+          "prompt": "Frantic",
+          "type": "choice",
+          "options": [
+            "Involving a lot of physical or mental effort.",
+            "Brave and determined when facing difficulties.",
+            "Continuing for a long time without weakening.",
+            "Done with little enthusiasm or commitment.",
+            "Based on poor judgment or incorrect ideas.",
+            "A final attempt when other options have failed.",
+            "Extremely urgent, hurried or anxious.",
+            "Unable to achieve the desired result."
+          ],
+          "answer": 6,
+          "id": "6-1",
+          "max": 1
+        },
+        {
+          "prompt": "Misguided",
+          "type": "choice",
+          "options": [
+            "Involving a lot of physical or mental effort.",
+            "Brave and determined when facing difficulties.",
+            "Continuing for a long time without weakening.",
+            "Done with little enthusiasm or commitment.",
+            "Based on poor judgment or incorrect ideas.",
+            "A final attempt when other options have failed.",
+            "Extremely urgent, hurried or anxious.",
+            "Unable to achieve the desired result."
+          ],
+          "answer": 4,
+          "id": "6-5",
+          "max": 1
+        },
+        {
+          "prompt": "Valiant",
+          "type": "choice",
+          "options": [
+            "Involving a lot of physical or mental effort.",
+            "Brave and determined when facing difficulties.",
+            "Continuing for a long time without weakening.",
+            "Done with little enthusiasm or commitment.",
+            "Based on poor judgment or incorrect ideas.",
+            "A final attempt when other options have failed.",
+            "Extremely urgent, hurried or anxious.",
+            "Unable to achieve the desired result."
+          ],
+          "answer": 1,
+          "id": "6-8",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Modal verb transformations",
+      "weight": 5,
+      "instructions": "Rewrite each sentence using modal verbs or an appropriate alternative. Keep the meaning. Give the requested explanation.",
+      "questions": [
+        {
+          "prompt": "A. I don't seem to be able to keep the information in my head.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-1"
+        },
+        {
+          "prompt": "A. I was required to pass it in order to study Psychology.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-2"
+        },
+        {
+          "prompt": "A. I was supposed to get up at about 7 a.m.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-3"
+        },
+        {
+          "prompt": "A. I was so tired I managed to sleep right through the alarm. Give an alternative and explain why could is not appropriate.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-4"
+        },
+        {
+          "prompt": "A. Were you allowed to take the test again?",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-5"
+        },
+        {
+          "prompt": "A. I mean, surely I wasn't meant to overtake all the cars.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-6"
+        },
+        {
+          "prompt": "A. I was forced to practise every night in front of them for a few months.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-7"
+        },
+        {
+          "prompt": "A. I was banned from going out with my friends for a couple of weekends.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-8"
+        },
+        {
+          "prompt": "B. She was obliged to wear a uniform when she worked at the hospital.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-9"
+        },
+        {
+          "prompt": "B. It's possible that they forgot to lock the front door.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-10"
+        },
+        {
+          "prompt": "B. You are forbidden to bring phones into the exam hall.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-11"
+        },
+        {
+          "prompt": "B. After trying for hours, he managed to fix the engine himself.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-12"
+        },
+        {
+          "prompt": "B. It was a mistake for you to speak to him so rudely yesterday.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-13"
+        },
+        {
+          "prompt": "B. Is it necessary for us to complete this application today?",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-14"
+        },
+        {
+          "prompt": "B. I am capable of speaking three languages fluently.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-15"
+        },
+        {
+          "prompt": "B. It was unnecessary for them to buy extra food, but they did anyway.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-16"
+        },
+        {
+          "prompt": "B. They were not allowed to stay out past midnight as teenagers.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-17"
+        },
+        {
+          "prompt": "B. I am certain that he missed the last train home.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "7-18"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Key word transformations: Modals",
+      "weight": 3,
+      "instructions": "Complete the second sentence using the word given without changing it.",
+      "questions": [
+        {
+          "prompt": "It wasn’t necessary for you to make so much effort. NEEDN’T: You ____.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "8-1"
+        },
+        {
+          "prompt": "I can’t find my key anywhere. Perhaps I left it at home? MIGHT: I can’t find my key anywhere. I ____.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "8-2"
+        },
+        {
+          "prompt": "He wasn’t allowed to enter the building. BANNED: He ____.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "8-3"
+        },
+        {
+          "prompt": "You shouldn’t have told him. SUPPOSED: You ____.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "8-4"
+        },
+        {
+          "prompt": "They made me attempt it, even though I knew it was futile. FORCED: They ____.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "8-5"
+        },
+        {
+          "prompt": "You weren’t meant to see that! SEEN: You ____!",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "8-6"
+        },
+        {
+          "prompt": "I think it was a mistake to tell him about the party. OUGHT: I don’t think ____.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "8-7"
+        },
+        {
+          "prompt": "The school says I have to study for three hours a night. REQUIRE: I ____.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "8-8"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "A cooing distraction",
+      "weight": 4,
+      "instructions": "Complete the story with the correct forms of the verbs in the word bank.",
+      "questions": [
+        {
+          "prompt": "Blank 1",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-1"
+        },
+        {
+          "prompt": "Blank 2",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-2"
+        },
+        {
+          "prompt": "Blank 3",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-3"
+        },
+        {
+          "prompt": "Blank 4",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-4"
+        },
+        {
+          "prompt": "Blank 5",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-5"
+        },
+        {
+          "prompt": "Blank 6",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-6"
+        },
+        {
+          "prompt": "Blank 7",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-7"
+        },
+        {
+          "prompt": "Blank 8",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-8"
+        },
+        {
+          "prompt": "Blank 9",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-9"
+        },
+        {
+          "prompt": "Blank 10",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "9-10"
+        }
+      ],
+      "passage": "This is the kind of story that you (1) ____ even believe really happened – but I promise it did!\nI was taking my final exams at school and we were all sitting in the big hall. It was really hot so the teacher (2) ____ to open all the windows. Usually the school kept them closed because they were very high up, which meant the teacher (3) ____ climb up a step ladder to open them.\nAnyway, the exam started and I was just getting my head down when I heard a kind of rustling noise. To be honest, I thought it (4) ____ someone fiddling with the exam papers or looking for something in their bag, though we weren’t actually allowed to bring in bags. I didn’t give it too much thought until I heard another strange noise, a kind of cooing. I looked up and saw that a bird, a pigeon to be precise, was flying round the room. It (5) ____ come in through the open windows.\nThe teacher made a speech about how we (6) ____ let it deflect our attention from our exam, and that we (7) ____ talk or anything, and then she started going around, climbing on the step ladder and trying to shoo the pigeon out of one of the windows. But the pigeon just (8) ____ find its way out at all. It was getting more and more agitated, and making more and more noise. The teacher (9) ____ expected us to just ignore it all!\nEventually, she (10) ____ direct the pigeon towards an open window, and it flew off, no doubt very relieved to have escaped.",
+      "wordBank": [
+        "be forced to",
+        "couldn’t",
+        "can’t have",
+        "might not",
+        "manage to",
+        "must be",
+        "must have",
+        "need to",
+        "not be allowed to",
+        "shouldn’t"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Sporting success vocabulary",
+      "weight": 3,
+      "instructions": "Choose the definition that best matches each expression about sporting success.",
+      "questions": [
+        {
+          "id": "10-1",
+          "type": "choice",
+          "prompt": "What does “being a self-starter” mean?",
+          "options": [
+            "Competing angrily with every teammate.",
+            "Avoiding any responsibility.",
+            "Needing instructions before every action.",
+            "Beginning tasks independently without waiting to be told."
+          ],
+          "answer": 3,
+          "max": 1
+        },
+        {
+          "id": "10-10",
+          "type": "choice",
+          "prompt": "What does “tenacity” mean?",
+          "options": [
+            "A fear of making any decisions.",
+            "An ability that has not been developed.",
+            "Firm determination to hold on to a goal and not give up.",
+            "Competition between neighbouring teams."
+          ],
+          "answer": 2,
+          "max": 1
+        }
+      ],
+      "wordBank": [
+        "being a self-starter",
+        "boundless energy",
+        "natural aptitude",
+        "perseverance",
+        "raw talent",
+        "rivalry",
+        "willingness to make sacrifices",
+        "self-conviction",
+        "stubborn streak",
+        "tenacity"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Listening: Motivation",
+      "weight": 4,
+      "instructions": "Listen to the recording. Answer in complete sentences, using details from the audio.",
+      "questions": [
+        {
+          "prompt": "What are the four speakers trying to motivate themselves to do? Include each speaker.",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "11-1"
+        },
+        {
+          "prompt": "What method does each speaker use to motivate themselves?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "11-2"
+        }
+      ],
+      "audio": "2.16"
+    },
+    {
+      "id": "12",
+      "title": "Reading: Memorisation and technology",
+      "weight": 4,
+      "instructions": "Choose the best answer for each question.",
+      "questions": [
+        {
+          "prompt": "What is the writer’s main opinion about memorisation?",
+          "type": "choice",
+          "options": [
+            "It should replace creative thinking.",
+            "It remains useful despite online information.",
+            "It is only needed without internet.",
+            "It is no longer relevant."
+          ],
+          "answer": 1,
+          "id": "12-1",
+          "max": 1
+        },
+        {
+          "prompt": "Teaching students how to think helps them:",
+          "type": "choice",
+          "options": [
+            "Interpret and apply knowledge.",
+            "Avoid history and science.",
+            "Remember without practice.",
+            "Complete every task alone."
+          ],
+          "answer": 0,
+          "id": "12-3",
+          "max": 1
+        },
+        {
+          "prompt": "What is the concern about technology?",
+          "type": "choice",
+          "options": [
+            "Becoming too dependent on it.",
+            "All online information is wrong.",
+            "Calculators make maths harder.",
+            "Schools cannot afford devices."
+          ],
+          "answer": 0,
+          "id": "12-6",
+          "max": 1
+        },
+        {
+          "prompt": "What may happen without memorisation practice?",
+          "type": "choice",
+          "options": [
+            "Creativity automatically improves.",
+            "The brain cannot learn anything.",
+            "The ability may weaken.",
+            "Factual knowledge becomes unnecessary."
+          ],
+          "answer": 2,
+          "id": "12-8",
+          "max": 1
+        },
+        {
+          "prompt": "Which approach would the writer support?",
+          "type": "choice",
+          "options": [
+            "Replace facts with internet research.",
+            "Only memorisation.",
+            "Remove all classroom technology.",
+            "Develop thinking and creativity alongside memorisation."
+          ],
+          "answer": 3,
+          "id": "12-10",
+          "max": 1
+        }
+      ],
+      "passageImage": "assets/images/memorisation.png"
+    },
+    {
+      "id": "13",
+      "title": "Body language: Meanings",
+      "weight": 3,
+      "instructions": "Match each expression to its meaning. Select the correct definition for each item.",
+      "questions": [
+        {
+          "prompt": "Fold your arms",
+          "type": "choice",
+          "options": [
+            "Move your fingers gently along your chin.",
+            "Bend your head slightly to one side.",
+            "Press your lips together tightly.",
+            "Place one ankle over the other.",
+            "Tap your fingers repeatedly on a surface.",
+            "Bring your eyebrows together, making forehead lines.",
+            "Bring fingertips together in a point, palms apart.",
+            "Cross your arms over your chest.",
+            "Tighten muscles around your nose, making small lines.",
+            "Move your palms back and forth against each other."
+          ],
+          "answer": 7,
+          "id": "13-1",
+          "max": 1
+        },
+        {
+          "prompt": "Tilt your head",
+          "type": "choice",
+          "options": [
+            "Move your fingers gently along your chin.",
+            "Bend your head slightly to one side.",
+            "Press your lips together tightly.",
+            "Place one ankle over the other.",
+            "Tap your fingers repeatedly on a surface.",
+            "Bring your eyebrows together, making forehead lines.",
+            "Bring fingertips together in a point, palms apart.",
+            "Cross your arms over your chest.",
+            "Tighten muscles around your nose, making small lines.",
+            "Move your palms back and forth against each other."
+          ],
+          "answer": 1,
+          "id": "13-6",
+          "max": 1
+        },
+        {
+          "prompt": "Stroke your chin",
+          "type": "choice",
+          "options": [
+            "Move your fingers gently along your chin.",
+            "Bend your head slightly to one side.",
+            "Press your lips together tightly.",
+            "Place one ankle over the other.",
+            "Tap your fingers repeatedly on a surface.",
+            "Bring your eyebrows together, making forehead lines.",
+            "Bring fingertips together in a point, palms apart.",
+            "Cross your arms over your chest.",
+            "Tighten muscles around your nose, making small lines.",
+            "Move your palms back and forth against each other."
+          ],
+          "answer": 0,
+          "id": "13-10",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Body language: Collocations",
+      "weight": 3,
+      "instructions": "Complete each sentence with the correct form of a verb. Use each verb once.",
+      "questions": [
+        {
+          "prompt": "I often ____ my throat before giving a talk.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "14-1"
+        },
+        {
+          "prompt": "My mum complains because my dad sometimes ____ his teeth when he’s asleep.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "14-2"
+        },
+        {
+          "prompt": "It’s my exam later on today. Please ____ your fingers for me!",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "14-3"
+        },
+        {
+          "prompt": "I asked Dan if he could help me and he simply ____ his shoulders.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "14-4"
+        },
+        {
+          "prompt": "Many people ____ their lip if they’re concentrating hard.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "14-5"
+        },
+        {
+          "prompt": "It may be a bit annoying when someone’s ____ their hair in their fingers while they’re talking to you.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "14-6"
+        },
+        {
+          "prompt": "I didn’t speak to Paul after the exam, but I saw him at the bus stop and he ____ me the thumbs up.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "14-7"
+        },
+        {
+          "prompt": "I always know when it’s time for a haircut because I start needing to ____ my hair back from my face.",
+          "type": "text",
+          "answer": null,
+          "max": 1,
+          "id": "14-8"
+        }
+      ],
+      "wordBank": [
+        "bite",
+        "clear",
+        "cross",
+        "flick",
+        "give",
+        "grind",
+        "shrug",
+        "twirl"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Reading: Emotions and expression",
+      "weight": 3,
+      "instructions": "Read the six-paragraph article below, then choose the best answer to each question. Base your answers on the article.",
+      "questions": [
+        {
+          "prompt": "The performance example in paragraph 1 is used to:",
+          "type": "choice",
+          "options": [
+            "Illustrate emotional health.",
+            "Introduce mental impact of stress.",
+            "Show effects of emotions.",
+            "Compare stressful situations."
+          ],
+          "answer": 2,
+          "id": "15-1",
+          "max": 1
+        },
+        {
+          "prompt": "The article’s purpose is to:",
+          "type": "choice",
+          "options": [
+            "Encourage scientific reading.",
+            "Discuss attitudes to showing emotions.",
+            "Praise emotion research.",
+            "Persuade pursuit of happiness."
+          ],
+          "answer": 1,
+          "id": "15-6",
+          "max": 1
+        }
+      ],
+      "passage": "Must we always look happy?\n\n1. At a school performance, a young actor waits behind the curtain. Nervousness makes his hands shake and his voice sound thin. Later, when the audience applauds, his shoulders relax and he speaks with confidence. The scene offers a familiar reminder: feelings can change how we move, sound and behave, even when we have planned exactly what to say.\n\n2. Expressions also help people communicate without words. A friend's worried look may invite a question; an excited grin can announce good news before a conversation begins. Yet interpreting a face is not always straightforward. Someone who looks serious may simply be concentrating. It would be unfair to assume that every unsmiling person is unfriendly or unhappy.\n\n3. Sometimes people deliberately choose an expression that does not match their mood. Imagine feeling disappointed after losing a match and then trying to smile. That action may seem counterintuitive: your expression appears to contradict what you feel. You might do it to reassure a teammate or to approach the next conversation more positively. Choosing the smile does not mean that the disappointment has disappeared.\n\n4. People disagree about attempts to influence feelings through outward behaviour. Some welcome the idea of using a smile or a calm voice to help themselves face a difficult moment. Others feel that forcing an expression makes their experience seem less honest. Both attitudes deserve consideration. An approach that one person finds helpful may leave another feeling pressured to pretend, so a universal rule would overlook important differences.\n\n5. The pressure can be especially noticeable at work. A receptionist may be expected to sound cheerful while dealing with an impatient customer. This management of displayed feelings is often called emotional labour. In an imagined workplace where staff must hide every trace of frustration, an employee could finish the day feeling exhausted and unheard. The difficulty is not simply being polite; it is being given no space to acknowledge difficult experiences. Managers should consider that burden when setting expectations for customer service.\n\n6. There is a difference between choosing a helpful response and being required to wear a permanent smile. People need room to decide how to manage and express their feelings in different situations, while still treating others respectfully. A quiet moment, an honest conversation or a deliberate smile may each have a place. The aim should be a thoughtful choice, not a demand that everyone look happy all the time."
+    },
+    {
+      "id": "16",
+      "title": "Listening: The magic of laughter",
+      "weight": 3,
+      "instructions": "Listen to the recording. Answer in complete sentences, using details from the audio.",
+      "questions": [
+        {
+          "prompt": "Do you find laughter contagious? Explain your answer.",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "16-1"
+        },
+        {
+          "prompt": "Based on the interview, why is laughter contagious for so many people?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "16-2"
+        }
+      ],
+      "audio": "3.4"
+    },
+    {
+      "id": "17",
+      "title": "Reporting verbs and patterns",
+      "weight": 3,
+      "instructions": "Choose the best answer for each question.",
+      "questions": [
+        {
+          "prompt": "The interviewer congratulated ____ a prestigious book award.",
+          "type": "choice",
+          "options": [
+            "Paul on having won",
+            "Paul had won"
+          ],
+          "answer": 0,
+          "id": "17-1",
+          "max": 1
+        },
+        {
+          "prompt": "The interviewer asked ____ really good for us.",
+          "type": "choice",
+          "options": [
+            "if was laughter",
+            "if laughter was"
+          ],
+          "answer": 1,
+          "id": "17-4",
+          "max": 1
+        },
+        {
+          "prompt": "The interviewer reminded ____ on sale from Friday.",
+          "type": "choice",
+          "options": [
+            "that the book would be",
+            "listeners that the book would be"
+          ],
+          "answer": 1,
+          "id": "17-7",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Reporting verbs: Matching patterns",
+      "weight": 3,
+      "instructions": "Match each sentence with the verb pattern following the reporting verb.",
+      "questions": [
+        {
+          "prompt": "The interview was great. It really convinced me to go out and buy the book.",
+          "type": "choice",
+          "options": [
+            "Different word order from a usual question",
+            "(that) clause",
+            "Object + (that) clause",
+            "to-infinitive",
+            "Object + to-infinitive",
+            "Gerund",
+            "Object + preposition + gerund"
+          ],
+          "answer": 4,
+          "id": "18-1",
+          "max": 1
+        },
+        {
+          "prompt": "My mother offered to buy a copy of the book for me.",
+          "type": "choice",
+          "options": [
+            "Different word order from a usual question",
+            "(that) clause",
+            "Object + (that) clause",
+            "to-infinitive",
+            "Object + to-infinitive",
+            "Gerund",
+            "Object + preposition + gerund"
+          ],
+          "answer": 3,
+          "id": "18-7",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Listening: Sounds and ASMR",
+      "weight": 5,
+      "instructions": "For Track 3.6, answer the three open questions. Then listen to Track 3.8 and select the best answers.",
+      "questions": [
+        {
+          "prompt": "Which sounds do they mention?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "audio": "3.6",
+          "id": "19-1"
+        },
+        {
+          "prompt": "What is their response to these sounds?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "audio": "3.6",
+          "id": "19-2"
+        },
+        {
+          "prompt": "Why does the girl think some sounds are relaxing?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "audio": "3.6",
+          "id": "19-3"
+        },
+        {
+          "prompt": "The interviewer questions the reason for:",
+          "type": "choice",
+          "options": [
+            "The variety of clips.",
+            "Their unusual content.",
+            "Difficulty accessing them.",
+            "Popularity of watching online clips."
+          ],
+          "answer": null,
+          "audio": "3.8",
+          "id": "19-4",
+          "max": 1
+        },
+        {
+          "prompt": "According to Simone, ASMR is:",
+          "type": "choice",
+          "options": [
+            "A common medical problem.",
+            "A complicated reaction to sounds.",
+            "A welcome experience for some.",
+            "A pain in your brain."
+          ],
+          "answer": null,
+          "audio": "3.8",
+          "id": "19-5",
+          "max": 1
+        },
+        {
+          "prompt": "People with ASMR might:",
+          "type": "choice",
+          "options": [
+            "Think it is normal for everyone.",
+            "React to similar sounds.",
+            "Trigger it themselves.",
+            "Not know others who have it."
+          ],
+          "answer": null,
+          "audio": "3.8",
+          "id": "19-6",
+          "max": 1
+        },
+        {
+          "prompt": "The interviewer is:",
+          "type": "choice",
+          "options": [
+            "Surprised at clip numbers.",
+            "Unresponsive to the clips.",
+            "Impressed by their effects.",
+            "Unsure what to do while watching."
+          ],
+          "answer": null,
+          "audio": "3.8",
+          "id": "19-7",
+          "max": 1
+        },
+        {
+          "prompt": "Simone is:",
+          "type": "choice",
+          "options": [
+            "Hopeful studies will help in future.",
+            "Disappointed at limited research.",
+            "Determined to contribute herself.",
+            "Aware results may take time."
+          ],
+          "answer": null,
+          "audio": "3.8",
+          "id": "19-8",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Reading: Emily Blunt",
+      "weight": 5,
+      "instructions": "Read the article. Answer in complete sentences using evidence from the passage.",
+      "questions": [
+        {
+          "prompt": "What did Emily Blunt find challenging about school?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "20-1"
+        },
+        {
+          "prompt": "How did a teacher’s suggestion change her life?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "20-2"
+        },
+        {
+          "prompt": "What was Emily’s attitude to acting when she was younger?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "20-3"
+        },
+        {
+          "prompt": "What did she find out about herself after her first attempts at acting?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "20-4"
+        },
+        {
+          "prompt": "What kind of roles does she find more challenging in terms of her stutter?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "20-5"
+        },
+        {
+          "prompt": "What does she think are the benefits of having a stutter?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "20-6"
+        },
+        {
+          "prompt": "How do actors with a stutter cope with their speech disorder when performing?",
+          "type": "text",
+          "answer": null,
+          "max": 2,
+          "id": "20-7"
+        }
+      ],
+      "passageImage": "assets/images/emily-blunt.png"
+    },
+    {
+      "id": "21",
+      "title": "Fashion vocabulary",
+      "weight": 6,
+      "instructions": "Use the clothing picture as a guide. Select the correct meaning. There is one item per page.",
+      "questions": [
+        {
+          "prompt": "What does “baggy” mean?",
+          "type": "choice",
+          "options": [
+            "Excessively bright or showy in an unattractive way.",
+            "Colours or patterns that do not look good together.",
+            "Loose and roomy."
+          ],
+          "answer": 2,
+          "imageCell": 0,
+          "id": "21-1",
+          "max": 1
+        },
+        {
+          "prompt": "What does “flared” mean?",
+          "type": "choice",
+          "options": [
+            "A thin, light, partly transparent fabric.",
+            "Fabric with a smooth glossy surface.",
+            "Becoming wider towards the bottom."
+          ],
+          "answer": 2,
+          "imageCell": 7,
+          "id": "21-8",
+          "max": 1
+        },
+        {
+          "prompt": "What does “oversized” mean?",
+          "type": "choice",
+          "options": [
+            "Larger than usual, often deliberately.",
+            "Fabric with parallel raised ridges.",
+            "Bright, showy and attention-attracting."
+          ],
+          "answer": 0,
+          "imageCell": 14,
+          "id": "21-15",
+          "max": 1
+        },
+        {
+          "prompt": "What does “scarlet” mean?",
+          "type": "choice",
+          "options": [
+            "Bright red.",
+            "Made with a series of folds.",
+            "Able to stretch and return towards its original shape."
+          ],
+          "answer": 0,
+          "imageCell": 20,
+          "id": "21-21",
+          "max": 1
+        },
+        {
+          "prompt": "What does “wide-leg” mean?",
+          "type": "choice",
+          "options": [
+            "Fabric with a smooth glossy surface.",
+            "Checks formed by crossing coloured bands.",
+            "Trousers cut wide along the length of the legs."
+          ],
+          "answer": 2,
+          "imageCell": 27,
+          "id": "21-28",
+          "max": 1
+        }
+      ],
+      "onePerPage": true
+    },
+    {
+      "id": "22",
+      "title": "Relative clauses",
+      "weight": 5,
+      "instructions": "A: Complete the rules. B: Supply a preposition and whom/which. C: Rewrite using whatever, whenever, whichever, wherever or whoever.",
+      "questions": [
+        {
+          "prompt": "A1. Choose: A defining clause gives essential / extra information; a non-defining clause gives essential / extra information. Commas are used in defining / non-defining clauses.",
+          "type": "text",
+          "answer": "essential; extra; non-defining",
+          "max": 1,
+          "id": "22-1"
+        },
+        {
+          "prompt": "A2. Which can be replaced by that / what in: The jungle setting is something which Rousseau painted again and again.",
+          "type": "text",
+          "answer": "that",
+          "max": 1,
+          "id": "22-2"
+        },
+        {
+          "prompt": "A3. In which sentence can which be omitted? Explain. (a) The painting reminds us of stories from Arabian Nights, which had recently been translated. (b) The jungle setting is something which Rousseau painted again and again.",
+          "type": "text",
+          "answer": "(b): which is the object in a defining clause. It cannot be omitted in the non-defining clause in (a).",
+          "max": 1,
+          "id": "22-3"
+        },
+        {
+          "prompt": "A4. A full relative clause is replaced by a present / past participle: paintings set in the jungle; a couple dressed in carnival costumes.",
+          "type": "text",
+          "answer": "past participle",
+          "max": 1,
+          "id": "22-4"
+        },
+        {
+          "prompt": "A5. Complete each rule: Where and when can introduce (both defining and non-defining / only defining) clauses. Why normally follows the reason in a (defining / non-defining) clause.",
+          "type": "text",
+          "answer": "both defining and non-defining; defining",
+          "max": 1,
+          "id": "22-5"
+        },
+        {
+          "prompt": "A6. Which version is more formal, and why? (a) The art world, which Rousseau longed to become an accepted part of, rejected him. (b) The art world, of which Rousseau longed to become an accepted part, rejected him.",
+          "type": "text",
+          "answer": "(b), because the preposition of is placed before the relative pronoun which.",
+          "max": 1,
+          "id": "22-6"
+        },
+        {
+          "prompt": "B1. Rousseau painted in his spare time until he was 49, ____ point he retired to paint full time.",
+          "type": "text",
+          "answer": "at which",
+          "max": 1,
+          "id": "22-7"
+        },
+        {
+          "prompt": "B2. His first employer fired him, as a result ____ he joined the army.",
+          "type": "text",
+          "answer": "of which",
+          "max": 1,
+          "id": "22-8"
+        },
+        {
+          "prompt": "B3. He painted exotic scenes, none ____ were based on first-hand experience.",
+          "type": "text",
+          "answer": "of which",
+          "max": 1,
+          "id": "22-9"
+        },
+        {
+          "prompt": "B4. The late 1800s was a period ____ art was developing rapidly.",
+          "type": "text",
+          "answer": "during which / in which",
+          "max": 1,
+          "id": "22-10"
+        },
+        {
+          "prompt": "B5. He was friends with Picasso and Jarry, both ____ supported his work.",
+          "type": "text",
+          "answer": "of whom",
+          "max": 1,
+          "id": "22-11"
+        },
+        {
+          "prompt": "B6. He exhibited his final painting in 1910, ____ time he was already seriously ill.",
+          "type": "text",
+          "answer": "by which / at which",
+          "max": 1,
+          "id": "22-12"
+        },
+        {
+          "prompt": "C1. Rewrite Anyone who using an -ever word: Anyone who painted that is a genius.",
+          "type": "text",
+          "answer": "Whoever painted that is a genius.",
+          "max": 1,
+          "id": "22-13"
+        },
+        {
+          "prompt": "C2. Rewrite any time: You can visit the gallery any time you like.",
+          "type": "text",
+          "answer": "You can visit the gallery whenever you like.",
+          "max": 1,
+          "id": "22-14"
+        },
+        {
+          "prompt": "C3. Rewrite Anywhere: Anywhere I go, I always bring my drawing chalks with me.",
+          "type": "text",
+          "answer": "Wherever I go, I always bring my drawing chalks with me.",
+          "max": 1,
+          "id": "22-15"
+        },
+        {
+          "prompt": "C4. Rewrite No matter what: No matter what I say, you’ll disagree.",
+          "type": "text",
+          "answer": "Whatever I say, you’ll disagree.",
+          "max": 1,
+          "id": "22-16"
+        },
+        {
+          "prompt": "C5. Rewrite any: Sit in any chair you like.",
+          "type": "text",
+          "answer": "Sit in whichever chair you like.",
+          "max": 1,
+          "id": "22-17"
+        },
+        {
+          "prompt": "C6. Rewrite everything: Stop everything you’re doing!",
+          "type": "text",
+          "answer": "Stop whatever you’re doing!",
+          "max": 1,
+          "id": "22-18"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Listening: Conversations about art",
+      "weight": 4,
+      "instructions": "Listen to Track 3.18. Answer the two open questions, then listen again and select the correct answers.",
+      "questions": [
+        {
+          "prompt": "For each of the three conversations, describe the age and relationship to Jan of the person speaking.",
+          "type": "text",
+          "answer": null,
+          "max": 3,
+          "id": "23-1"
+        },
+        {
+          "prompt": "For each conversation, where are the speakers and where are the artworks?",
+          "type": "text",
+          "answer": null,
+          "max": 3,
+          "id": "23-2"
+        },
+        {
+          "prompt": "What does Jan think about reverse graffiti?",
+          "type": "choice",
+          "options": [
+            "She admires the work.",
+            "She doesn’t consider it art.",
+            "She is surprised anyone likes it."
+          ],
+          "answer": null,
+          "id": "23-3",
+          "max": 1
+        },
+        {
+          "prompt": "The man says reverse graffiti:",
+          "type": "choice",
+          "options": [
+            "Is high quality.",
+            "Will not last long.",
+            "Could work for advertising."
+          ],
+          "answer": null,
+          "id": "23-4",
+          "max": 1
+        },
+        {
+          "prompt": "Why does the boy love anime drawing?",
+          "type": "choice",
+          "options": [
+            "It is straightforward.",
+            "It depicts a range of feelings.",
+            "He loves Japanese culture."
+          ],
+          "answer": null,
+          "id": "23-6",
+          "max": 1
+        },
+        {
+          "prompt": "The man thinks the sculpture:",
+          "type": "choice",
+          "options": [
+            "Is overrated and uses Italian marble.",
+            "Is mediocre; reflection makes the impact.",
+            "Is thought-provoking: difference and unity."
+          ],
+          "answer": null,
+          "id": "23-7",
+          "max": 1
+        },
+        {
+          "prompt": "What does the woman say about Bruno Giorgi?",
+          "type": "choice",
+          "options": [
+            "He admired the city’s labourers.",
+            "He designed the building.",
+            "He was a close friend of Oscar Niemeyer."
+          ],
+          "answer": null,
+          "id": "23-8",
+          "max": 1
+        }
+      ],
+      "audio": "3.18"
+    },
+    {
+      "id": "24",
+      "title": "Writing: A letter to the editor",
+      "weight": 10,
+      "instructions": "Identify the article, express your opinion, support it with at least two details in your own words, consider another view, and conclude with a suggestion. Use a formal tone and at least three hedging expressions.",
+      "questions": [
+        {
+          "prompt": "Write your own 200–250 word letter to the editor responding to the article.",
+          "type": "essay",
+          "answer": null,
+          "max": 10,
+          "id": "24-1"
+        }
+      ],
+      "reference": "https://www.nationalgeographic.com/history/article/mystery-obsession-how-gize-pyramids-built",
+      "passage": "Start: Dear Editor,\nParagraph 1: article and opinion.\nParagraphs 2–3: reasons, article evidence and another viewpoint.\nParagraph 4: conclusion or suggestion.\nClose: Yours faithfully, + your name.\nUseful phrases: I am writing in response to…; While I recognise…; I am not entirely convinced…; Furthermore…; Nevertheless…; I would therefore argue…\nHedging: believe, suggest, appear, seem, may, might, could, would, perhaps, probably, somewhat, to some extent.\nRubric: response/opinion 2; evidence/reasons 2; organisation/format 2; vocabulary/tone/hedging 2; grammar/spelling/punctuation 2."
+    }
+  ],
+  "extraAudio": [
+    "3.19"
+  ]
+}

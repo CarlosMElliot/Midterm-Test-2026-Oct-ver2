@@ -1,6 +1,6 @@
 {
   "title": "High Note 5 · Midterm",
-  "version": "2026-10-mc5",
+  "version": "2026-10-mc5-writing2",
   "sections": [
     {
       "id": "1",
@@ -112,34 +112,6 @@
           "max": 1
         },
         {
-          "id": "3-2",
-          "type": "text",
-          "prompt": "Leo: Yesterday I apologised ____ arriving late to our study group.",
-          "answer": "for",
-          "max": 1
-        },
-        {
-          "id": "3-3",
-          "type": "text",
-          "prompt": "Ana: Regular practice helps me cope ____ exam pressure.",
-          "answer": "with",
-          "max": 1
-        },
-        {
-          "id": "3-4",
-          "type": "text",
-          "prompt": "Sam: I finally succeeded ____ solving the problem without help.",
-          "answer": "in",
-          "max": 1
-        },
-        {
-          "id": "3-5",
-          "type": "text",
-          "prompt": "Noor: We all benefit ____ sharing revision strategies.",
-          "answer": "from",
-          "max": 1
-        },
-        {
           "id": "3-6",
           "type": "text",
           "prompt": "Ben: Whether our project succeeds will depend ____ how well we organise our time.",
@@ -225,34 +197,6 @@
           "id": "5-1"
         },
         {
-          "prompt": "Put the books in three piles. SORT: ____ the books into three piles.",
-          "type": "text",
-          "answer": "Sort",
-          "max": 1,
-          "id": "5-2"
-        },
-        {
-          "prompt": "If you make an effort with the work, you’ll succeed. APPLY: If you ____, you’ll succeed.",
-          "type": "text",
-          "answer": "apply yourself to the work",
-          "max": 1,
-          "id": "5-3"
-        },
-        {
-          "prompt": "The magician made a big noise to divert the audience’s attention away. DEFLECT: The magician made a big noise to ____.",
-          "type": "text",
-          "answer": "deflect the audience’s attention",
-          "max": 1,
-          "id": "5-4"
-        },
-        {
-          "prompt": "The guard stared at me with no emotion and I felt awkward. BLANKLY: The guard ____, and I felt awkward.",
-          "type": "text",
-          "answer": "stared at me blankly",
-          "max": 1,
-          "id": "5-5"
-        },
-        {
           "prompt": "His success came about through many years of hard work. ASSOCIATED: His success ____ many years of hard work.",
           "type": "text",
           "answer": "was associated with",
@@ -334,118 +278,6 @@
           "id": "7-1"
         },
         {
-          "prompt": "A. I was required to pass it in order to study Psychology.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-2"
-        },
-        {
-          "prompt": "A. I was supposed to get up at about 7 a.m.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-3"
-        },
-        {
-          "prompt": "A. I was so tired I managed to sleep right through the alarm. Give an alternative and explain why could is not appropriate.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-4"
-        },
-        {
-          "prompt": "A. Were you allowed to take the test again?",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-5"
-        },
-        {
-          "prompt": "A. I mean, surely I wasn't meant to overtake all the cars.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-6"
-        },
-        {
-          "prompt": "A. I was forced to practise every night in front of them for a few months.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-7"
-        },
-        {
-          "prompt": "A. I was banned from going out with my friends for a couple of weekends.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-8"
-        },
-        {
-          "prompt": "B. She was obliged to wear a uniform when she worked at the hospital.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-9"
-        },
-        {
-          "prompt": "B. It's possible that they forgot to lock the front door.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-10"
-        },
-        {
-          "prompt": "B. You are forbidden to bring phones into the exam hall.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-11"
-        },
-        {
-          "prompt": "B. After trying for hours, he managed to fix the engine himself.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-12"
-        },
-        {
-          "prompt": "B. It was a mistake for you to speak to him so rudely yesterday.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-13"
-        },
-        {
-          "prompt": "B. Is it necessary for us to complete this application today?",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-14"
-        },
-        {
-          "prompt": "B. I am capable of speaking three languages fluently.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-15"
-        },
-        {
-          "prompt": "B. It was unnecessary for them to buy extra food, but they did anyway.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-16"
-        },
-        {
-          "prompt": "B. They were not allowed to stay out past midnight as teenagers.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "7-17"
-        },
-        {
           "prompt": "B. I am certain that he missed the last train home.",
           "type": "text",
           "answer": null,
@@ -466,48 +298,6 @@
           "answer": null,
           "max": 1,
           "id": "8-1"
-        },
-        {
-          "prompt": "I can’t find my key anywhere. Perhaps I left it at home? MIGHT: I can’t find my key anywhere. I ____.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "8-2"
-        },
-        {
-          "prompt": "He wasn’t allowed to enter the building. BANNED: He ____.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "8-3"
-        },
-        {
-          "prompt": "You shouldn’t have told him. SUPPOSED: You ____.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "8-4"
-        },
-        {
-          "prompt": "They made me attempt it, even though I knew it was futile. FORCED: They ____.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "8-5"
-        },
-        {
-          "prompt": "You weren’t meant to see that! SEEN: You ____!",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "8-6"
-        },
-        {
-          "prompt": "I think it was a mistake to tell him about the party. OUGHT: I don’t think ____.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "8-7"
         },
         {
           "prompt": "The school says I have to study for three hours a night. REQUIRE: I ____.",
@@ -831,48 +621,6 @@
           "id": "14-1"
         },
         {
-          "prompt": "My mum complains because my dad sometimes ____ his teeth when he’s asleep.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "14-2"
-        },
-        {
-          "prompt": "It’s my exam later on today. Please ____ your fingers for me!",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "14-3"
-        },
-        {
-          "prompt": "I asked Dan if he could help me and he simply ____ his shoulders.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "14-4"
-        },
-        {
-          "prompt": "Many people ____ their lip if they’re concentrating hard.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "14-5"
-        },
-        {
-          "prompt": "It may be a bit annoying when someone’s ____ their hair in their fingers while they’re talking to you.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "14-6"
-        },
-        {
-          "prompt": "I didn’t speak to Paul after the exam, but I saw him at the bus stop and he ____ me the thumbs up.",
-          "type": "text",
-          "answer": null,
-          "max": 1,
-          "id": "14-7"
-        },
-        {
           "prompt": "I always know when it’s time for a haircut because I start needing to ____ my hair back from my face.",
           "type": "text",
           "answer": null,
@@ -1045,14 +793,6 @@
           "id": "19-1"
         },
         {
-          "prompt": "What is their response to these sounds?",
-          "type": "text",
-          "answer": null,
-          "max": 2,
-          "audio": "3.6",
-          "id": "19-2"
-        },
-        {
           "prompt": "Why does the girl think some sounds are relaxing?",
           "type": "text",
           "answer": null,
@@ -1144,41 +884,6 @@
           "answer": null,
           "max": 2,
           "id": "20-1"
-        },
-        {
-          "prompt": "How did a teacher’s suggestion change her life?",
-          "type": "text",
-          "answer": null,
-          "max": 2,
-          "id": "20-2"
-        },
-        {
-          "prompt": "What was Emily’s attitude to acting when she was younger?",
-          "type": "text",
-          "answer": null,
-          "max": 2,
-          "id": "20-3"
-        },
-        {
-          "prompt": "What did she find out about herself after her first attempts at acting?",
-          "type": "text",
-          "answer": null,
-          "max": 2,
-          "id": "20-4"
-        },
-        {
-          "prompt": "What kind of roles does she find more challenging in terms of her stutter?",
-          "type": "text",
-          "answer": null,
-          "max": 2,
-          "id": "20-5"
-        },
-        {
-          "prompt": "What does she think are the benefits of having a stutter?",
-          "type": "text",
-          "answer": null,
-          "max": 2,
-          "id": "20-6"
         },
         {
           "prompt": "How do actors with a stutter cope with their speech disorder when performing?",
@@ -1276,118 +981,6 @@
           "answer": "essential; extra; non-defining",
           "max": 1,
           "id": "22-1"
-        },
-        {
-          "prompt": "A2. Which can be replaced by that / what in: The jungle setting is something which Rousseau painted again and again.",
-          "type": "text",
-          "answer": "that",
-          "max": 1,
-          "id": "22-2"
-        },
-        {
-          "prompt": "A3. In which sentence can which be omitted? Explain. (a) The painting reminds us of stories from Arabian Nights, which had recently been translated. (b) The jungle setting is something which Rousseau painted again and again.",
-          "type": "text",
-          "answer": "(b): which is the object in a defining clause. It cannot be omitted in the non-defining clause in (a).",
-          "max": 1,
-          "id": "22-3"
-        },
-        {
-          "prompt": "A4. A full relative clause is replaced by a present / past participle: paintings set in the jungle; a couple dressed in carnival costumes.",
-          "type": "text",
-          "answer": "past participle",
-          "max": 1,
-          "id": "22-4"
-        },
-        {
-          "prompt": "A5. Complete each rule: Where and when can introduce (both defining and non-defining / only defining) clauses. Why normally follows the reason in a (defining / non-defining) clause.",
-          "type": "text",
-          "answer": "both defining and non-defining; defining",
-          "max": 1,
-          "id": "22-5"
-        },
-        {
-          "prompt": "A6. Which version is more formal, and why? (a) The art world, which Rousseau longed to become an accepted part of, rejected him. (b) The art world, of which Rousseau longed to become an accepted part, rejected him.",
-          "type": "text",
-          "answer": "(b), because the preposition of is placed before the relative pronoun which.",
-          "max": 1,
-          "id": "22-6"
-        },
-        {
-          "prompt": "B1. Rousseau painted in his spare time until he was 49, ____ point he retired to paint full time.",
-          "type": "text",
-          "answer": "at which",
-          "max": 1,
-          "id": "22-7"
-        },
-        {
-          "prompt": "B2. His first employer fired him, as a result ____ he joined the army.",
-          "type": "text",
-          "answer": "of which",
-          "max": 1,
-          "id": "22-8"
-        },
-        {
-          "prompt": "B3. He painted exotic scenes, none ____ were based on first-hand experience.",
-          "type": "text",
-          "answer": "of which",
-          "max": 1,
-          "id": "22-9"
-        },
-        {
-          "prompt": "B4. The late 1800s was a period ____ art was developing rapidly.",
-          "type": "text",
-          "answer": "during which / in which",
-          "max": 1,
-          "id": "22-10"
-        },
-        {
-          "prompt": "B5. He was friends with Picasso and Jarry, both ____ supported his work.",
-          "type": "text",
-          "answer": "of whom",
-          "max": 1,
-          "id": "22-11"
-        },
-        {
-          "prompt": "B6. He exhibited his final painting in 1910, ____ time he was already seriously ill.",
-          "type": "text",
-          "answer": "by which / at which",
-          "max": 1,
-          "id": "22-12"
-        },
-        {
-          "prompt": "C1. Rewrite Anyone who using an -ever word: Anyone who painted that is a genius.",
-          "type": "text",
-          "answer": "Whoever painted that is a genius.",
-          "max": 1,
-          "id": "22-13"
-        },
-        {
-          "prompt": "C2. Rewrite any time: You can visit the gallery any time you like.",
-          "type": "text",
-          "answer": "You can visit the gallery whenever you like.",
-          "max": 1,
-          "id": "22-14"
-        },
-        {
-          "prompt": "C3. Rewrite Anywhere: Anywhere I go, I always bring my drawing chalks with me.",
-          "type": "text",
-          "answer": "Wherever I go, I always bring my drawing chalks with me.",
-          "max": 1,
-          "id": "22-15"
-        },
-        {
-          "prompt": "C4. Rewrite No matter what: No matter what I say, you’ll disagree.",
-          "type": "text",
-          "answer": "Whatever I say, you’ll disagree.",
-          "max": 1,
-          "id": "22-16"
-        },
-        {
-          "prompt": "C5. Rewrite any: Sit in any chair you like.",
-          "type": "text",
-          "answer": "Sit in whichever chair you like.",
-          "max": 1,
-          "id": "22-17"
         },
         {
           "prompt": "C6. Rewrite everything: Stop everything you’re doing!",
