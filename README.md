@@ -31,3 +31,7 @@ Node 22+, no dependencies. Run `npm test` and `npm run build`. Serve `site/` wit
 Search a student's name and expand their attempt. Every section and question appears, including **Unanswered** items worth zero points. Choice questions show all options, the selected option, the expected answer and correctness. Written responses appear in full with completion credit and pending-review status. The page loads current submitted records from the backend; if unavailable, it falls back to the last repository copy in `site/results.json`. Refresh to load new submissions. The repository copy updates on the scheduled sync.
 
 Viewing requires no password. Editing grades still requires teacher sign-in. Credentials and private teacher feedback are excluded from public reports. Existing submitted attempts in this Pages edition are included automatically; unsubmitted drafts remain on the student's device.
+
+### Deployment status — October 10, 2026
+
+The public response page is published. Vercel rejected the backend update because its deployment rate limit was reached (retry in 24 hours). Until that update deploys, the page shows the repository score summaries and notes that detailed responses are not yet available. Existing submissions and protected teacher review continue working. After the backend deploys, the page loads full responses automatically and the scheduled sync stores them in this repository.
