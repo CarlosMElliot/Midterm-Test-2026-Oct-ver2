@@ -3,7 +3,7 @@ import {API_URL,PUBLIC_API_KEY} from './backend-config.js';
 import {score,report} from './grading.js';
 const KEY='high-note-midterm-static-v2';
 let examPromise;
-export function getExam(){return examPromise??=fetch(new URL('exam.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('Could not load the test. Check your connection and try again.');return r.json();});}
+export function getExam(){return examPromise??=fetch(new URL('exam.json',import.meta.url),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Could not load the test. Check your connection and try again.');return r.json();});}
 export function readStore(){const raw=localStorage.getItem(KEY);if(!raw)return {active:null,attempts:[]};try{const data=JSON.parse(raw);if(!Array.isArray(data.attempts))throw Error();return data;}catch{throw Error('Saved browser data could not be read. Use another browser or ask your teacher for help.');}}
 function writeStore(store){try{localStorage.setItem(KEY,JSON.stringify(store));}catch{throw Error('Browser storage is unavailable or full. Your latest change was not saved. Download your work before closing.');}}
 export function localAttempts(){return readStore().attempts;}

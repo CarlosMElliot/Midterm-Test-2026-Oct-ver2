@@ -1,4 +1,5 @@
-import exam from './exam.json' with {type:'json'};
+import currentExam from './exam.json' with {type:'json'};
+import legacyExam from './exam-legacy.json' with {type:'json'};
 import {score} from './grading.js';
 const allowedOrigin='https://carlosmelliot.github.io';
 const publicKey='sb_publishable_1aOxVnhGzxLskJqFBZHizA_pdteBEhZ';
@@ -29,7 +30,8 @@ Deno.serve(async req=>{try{
   const grades={...a.grades};for(const [id,v] of Object.entries(b.grades)){const q=a.exam.sections.flatMap((s:any)=>s.questions).find((q:any)=>q.id===id);if(!q||v!==null&&(typeof v!=='number'||!Number.isFinite(v)||v<0||v>q.max))return send({error:'Points must be between zero and the question maximum'},400);if(v===null)delete grades[id];else grades[id]=v;}
   const saved=await db(`?id=eq.${b.attemptId}&updated_at=eq.${encodeURIComponent(a.updated_at)}`,{method:'PATCH',headers:{Prefer:'return=representation'},body:JSON.stringify({grades})});if(!saved.ok)throw Error('Could not save grades');const updated=(await saved.json())[0];if(!updated)return send({error:'Another update was saved first. Refresh and retry.'},409);return send({ok:true,result:details(updated)});
  }
- if(b.examVersion!==exam.version)return send({error:'Test version changed. Download your answers and contact your teacher.'},409);
+ const exam=[currentExam,legacyExam].find(e=>e.version===b.examVersion);
+ if(!exam)return send({error:'Test version changed. Download your answers and contact your teacher.'},409);
  if(!/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(b.clientId||''))return send({error:'Invalid attempt ID'},400);
  const name=typeof b.name==='string'?b.name.trim():'';if(name.length<2||name.length>100)return send({error:'Enter a name (2–100 characters)'},400);
  if(!b.answers||typeof b.answers!=='object'||Array.isArray(b.answers))return send({error:'Answers required'},400);

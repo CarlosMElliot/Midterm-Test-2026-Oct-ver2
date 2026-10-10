@@ -47,3 +47,5 @@ The Edge Function authenticates the public application key itself (`verify_jwt=f
 The student test and teacher accordions consolidate the 24 original exercise groups into 11 sections. All questions, tracks and original scoring weights remain intact; server records retain original exercise IDs for compatibility.
 
 The test has exactly 30 question pages: section introductions appear on the first exercise page, and clothing questions are grouped four per page. Existing in-progress attempts are mapped to the corresponding question when loading the new layout.
+
+Each of the 11 sections contains at most five multiple-choice questions. Existing written questions and section weights are retained. The mc5 question-bank version is used for new attempts; already-started older attempts remain supported with their original questions and scores.
