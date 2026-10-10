@@ -1,37 +1,43 @@
-# High Note 5 — midterm
+# High Note 5 — GitHub Pages + Supabase
 
-GitHub Pages test: 24 sections, 100 weighted points, section instructions, progress bar, compact dropdowns, seven listening tracks and clothing reference images.
+The test runs on **GitHub Pages**. **Supabase** handles submissions and server-side scoring. **Vercel is not required by this edition.**
 
-## Students
+- [Take the test](https://carlosmelliot.github.io/Midterm-Test-2026-Oct-ver2/)
+- [Public teacher view — no password](https://carlosmelliot.github.io/Midterm-Test-2026-Oct-ver2/responses.html)
+- [Results table](RESULTS.md)
+- [Supabase project dashboard](https://supabase.com/dashboard/project/mntmiggooahfasgzjvch)
 
-Enter your name and complete the test. Answers save locally while working. Submit sends answers to the existing Vercel backend, which calculates the score and saves an encrypted record in `CarlosMElliot/Midterm-Test-2026-Oct`. Wait for **Saved to repository** and a receipt. If sending fails, answers remain on this device; use **Retry sending** or download a backup. Previous attempts remain accessible on Results after starting a new response.
+## What happens on Submit
 
-Non-empty written responses earn full item completion credit in the provisional score. Blank responses earn zero. Written answers remain pending teacher review; teacher grades replace completion credit. Objective answers are scored against the backend question bank. Total weighting remains 100 points.
+1. The student enters only a name and completes the test. Progress saves on their device while they work.
+2. Submit sends the name, answers, attempt ID, start time and focus count to the Supabase `midterm-api` Edge Function.
+3. The function validates answers against its question bank, calculates the score and stores the complete attempt in `public.midterm_submissions`. Client-supplied scores and grades are ignored. Retrying the same submission does not create duplicates.
+4. **Saved online** and a receipt confirm database storage. If sending fails, the student can retry or download their saved response.
+5. GitHub Actions copies complete public reports into `site/results.json`, updates `RESULTS.md`, and deploys Pages. The workflow runs every five minutes, but GitHub can delay scheduled runs. Supabase receipt confirmation does not mean the GitHub copy has finished yet.
 
-Three numbered focus warnings are displayed when leaving the test; the third ends the local attempt and prompts a restart. Browser monitoring is best effort. Each listening recording appears once at the top of its exercise. Continue buttons appear at both top and bottom.
+## Every response is included
 
-## Teacher review and repository results
+The public teacher view shows the student's name, total /100, timestamps, every section and every question. Choice questions show all options, the selected choice, expected answer, points and Correct/Incorrect status. Omitted questions appear as **Unanswered**, worth zero. Written responses appear in full. Non-empty written responses receive completion credit, pending teacher review; final teacher grades replace that credit. The total remains 100 weighted points.
 
-Use the authenticated [teacher dashboard](https://midterm-test-2026-oct.vercel.app/admin) to review automatically received answers and grade written work. Encrypted detailed records stay in the original repository's `exam-data` branch. The public teacher view includes student names, scores, timestamps, every question, all selected choices, complete written answers and unanswered items. Anyone can read these responses without signing in.
+Anyone can view student responses without a password. The page loads current Supabase reports, falling back to the repository copy if unavailable. Older records already in the repository are retained; detailed answers stored only in the previous backend are not automatically migrated.
 
-The **Sync repository scores** workflow copies complete public response reports for this edition into `site/results.json` and root `RESULTS.md`, then deploys Pages. It runs on a five-minute schedule; GitHub may delay scheduled runs. It can also be run manually in Actions. Teacher grade changes flow through the same sync. The original backend remains required for automatic submission. Its credentials stay server-side.
+## Teacher grading
 
-`teacher.html` is an optional local import/review tool. Changes made there are local and do not update the central dashboard. JSON and text report downloads are backups; email delivery is not automatic.
+Viewing responses requires no sign-in. Changing grades requires owner access to Supabase. In the Supabase Table Editor, open `midterm_submissions`, find the student's row and edit its `grades` JSON object: map question IDs to raw earned points, such as `{"1-1": 1}`. Use each question's displayed raw maximum. Refresh the public view to see recalculated scores; the next sync updates GitHub. Remove a grade entry to restore automatic scoring/completion credit.
 
-## Deployment and development
+`teacher.html` remains an optional local JSON import/review workspace; edits made there do not update Supabase. No database password or secret API key is stored in this repository. The frontend's publishable application key is intentionally public. RLS is enabled and direct anonymous/authenticated table access is revoked; only the server function writes submissions. Names do not verify student identity. Public results and question keys are visible to students.
 
-Select **Settings → Pages → GitHub Actions**. Workflows build `_site/` and deploy the interface, styles, question bank and media. The separate Vercel backend must remain available at its configured URL for submission; GitHub Pages itself cannot write repository records.
+## Test behavior
 
-Node 22+, no dependencies. Run `npm test` and `npm run build`. Serve `site/` with an HTTP server. Asset URLs are relative and fingerprinted during builds. Answer keys in a static question bank are public; name-only submissions do not verify student identity.
+24 sections, 100 points, seven audio recordings, clothing reference images, compact dropdowns, section instructions, progress indicator and top/bottom Continue buttons. Each recording appears once per exercise. Three focus warnings end the local attempt on the third departure; monitoring is best effort. Submit a new response starts a separate attempt. JSON and text report downloads remain available; email sending is not configured in this edition.
 
-## Public teacher view — no password
+## Deployment and source
 
-[Open all student responses](https://carlosmelliot.github.io/Midterm-Test-2026-Oct-ver2/responses.html)
+GitHub Settings → Pages → GitHub Actions. `npm test` and `npm run build` validate and build `_site/`. All audio, images and styles live in this repository. Node 22+, no package dependencies.
 
-Search a student's name and expand their attempt. Every section and question appears, including **Unanswered** items worth zero points. Choice questions show all options, the selected option, the expected answer and correctness. Written responses appear in full with completion credit and pending-review status. The page loads current submitted records from the backend; if unavailable, it falls back to the last repository copy in `site/results.json`. Refresh to load new submissions. The repository copy updates on the scheduled sync.
+- `site/backend-config.js`: public project endpoint and publishable key.
+- `supabase/schema.sql`: deployed table, index, RLS and timestamp trigger.
+- `supabase/functions/midterm-api/`: deployed Edge Function and server-side exam/grading snapshot.
+- `.github/workflows/sync-results.yml`: database-to-repository report sync.
 
-Viewing requires no password. Editing grades still requires teacher sign-in. Credentials and private teacher feedback are excluded from public reports. Existing submitted attempts in this Pages edition are included automatically; unsubmitted drafts remain on the student's device.
-
-### Deployment status — October 10, 2026
-
-The public response page is published. Vercel rejected the backend update because its deployment rate limit was reached (retry in 24 hours). Until that update deploys, the page shows the repository score summaries and notes that detailed responses are not yet available. Existing submissions and protected teacher review continue working. After the backend deploys, the page loads full responses automatically and the scheduled sync stores them in this repository.
+The Edge Function authenticates the public application key itself (`verify_jwt=false`) and uses Supabase's server-only environment credentials for database access. Deploy its complete folder when changing server scoring or the question bank. Keep `site/exam.json` and the function's exam snapshot/version synchronized. Run security advisors after schema changes; the intentional RLS-with-no-policies notice reflects the service-only table design.

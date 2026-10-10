@@ -1,3 +1,4 @@
+import {API_URL,PUBLIC_API_KEY} from './backend-config.js';
 import {score,report} from './grading.js';
 const KEY='high-note-midterm-static-v2';
 let examPromise;
@@ -8,7 +9,7 @@ export function localAttempts(){return readStore().attempts;}
 export async function syncAttempt(a){
  if(a.repositoryReceipt)return {ok:true,receipt:a.repositoryReceipt};
  let receipt,error;
- try{const response=await fetch('https://midterm-test-2026-oct.vercel.app/api/static-submit',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'omit',signal:AbortSignal.timeout(20000),body:JSON.stringify({clientId:a.id,name:a.name,examVersion:a.exam.version,answers:a.answers,startedAt:a.startedAt,violations:a.violations})});const data=await response.json();if(!response.ok||!data.ok||!data.receipt?.id)throw Error(data.error||'The repository did not confirm receipt.');receipt=data.receipt;error=data.warning||null;}catch(e){error=e.message||'Connection failed.';}
+ try{const response=await fetch(API_URL+'?action=submit',{method:'POST',headers:{'Content-Type':'application/json',apikey:PUBLIC_API_KEY},credentials:'omit',signal:AbortSignal.timeout(20000),body:JSON.stringify({clientId:a.id,name:a.name,examVersion:a.exam.version,answers:a.answers,startedAt:a.startedAt,violations:a.violations})});const data=await response.json();if(!response.ok||!data.ok||!data.receipt?.id)throw Error(data.error||'The repository did not confirm receipt.');receipt=data.receipt;error=data.warning||null;}catch(e){error=e.message||'Connection failed.';}
  const fresh=readStore(),current=fresh.attempts.find(item=>item.id===a.id);if(current){if(receipt)current.repositoryReceipt=receipt;current.repositoryError=error;writeStore(fresh);}
  return {ok:!!receipt,receipt,warning:error};
 }

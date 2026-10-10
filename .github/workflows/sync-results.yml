@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - scripts/sync-results.mjs
+      - site/backend-config.js
       - .github/workflows/sync-results.yml
 permissions:
   contents: write
