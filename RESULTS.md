@@ -6,6 +6,7 @@ Automatically synced from backend-scored submissions. Completion credit remains 
 
 | Name | Score / 100 | Completion credit included | Status | Submitted (UTC) | Updated (UTC) |
 | --- | --- | --- | --- | --- | --- |
+| Oscar Manuel Armas Pineda | 75.02 | 50.73 | Awaiting teacher review | 2026-10-11T03:52:36.902361+00:00 | 2026-10-11T03:52:36.902361+00:00 |
 | Fernanda Issabella Mercado González | 92.84 | 56.45 | Awaiting teacher review | 2026-10-10T21:51:19.173348+00:00 | 2026-10-10T21:51:19.173348+00:00 |
 | Melany Sofia Martinez Pérez | 91.84 | 56.73 | Awaiting teacher review | 2026-10-10T19:43:38.167447+00:00 | 2026-10-10T19:43:38.167447+00:00 |
 | Carlos M | 10 | 10 | Awaiting teacher review | 2026-10-10T18:40:24.303221+00:00 | 2026-10-10T18:40:24.303221+00:00 |
